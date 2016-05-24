@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://www.bancobcr.com" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.bancobcr.com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://www.bancobcr.com/Imports">
+      <xsd:import namespace="http://www.bancobcr.com" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/BCR.InternetBanking.Sesiones.ETL" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IServicioSesiones_CrearSesion_InputMessage">
+    <wsdl:part name="parameters" element="tns:CrearSesion" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSesiones_CrearSesion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CrearSesionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSesiones_EliminarSesion_InputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarSesion" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSesiones_EliminarSesion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarSesionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSesiones_ConsultarSesion_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarSesion" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSesiones_ConsultarSesion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarSesionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSesiones_CrearVariable_InputMessage">
+    <wsdl:part name="parameters" element="tns:CrearVariable" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSesiones_CrearVariable_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CrearVariableResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSesiones_CrearListaVariables_InputMessage">
+    <wsdl:part name="parameters" element="tns:CrearListaVariables" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSesiones_CrearListaVariables_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CrearListaVariablesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSesiones_EliminarVariable_InputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarVariable" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSesiones_EliminarVariable_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarVariableResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSesiones_EliminarVariablesNoPersistentes_InputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarVariablesNoPersistentes" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSesiones_EliminarVariablesNoPersistentes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarVariablesNoPersistentesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSesiones_ActualizarVariable_InputMessage">
+    <wsdl:part name="parameters" element="tns:ActualizarVariable" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSesiones_ActualizarVariable_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ActualizarVariableResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSesiones_ConsultarVariable_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarVariable" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSesiones_ConsultarVariable_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarVariableResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSesiones_ConsultarVariablesPorSesion_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarVariablesPorSesion" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSesiones_ConsultarVariablesPorSesion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarVariablesPorSesionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSesiones_ActualizarListaVariables_InputMessage">
+    <wsdl:part name="parameters" element="tns:ActualizarListaVariables" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSesiones_ActualizarListaVariables_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ActualizarListaVariablesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSesiones_EliminarSesionUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarSesionUsuario" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSesiones_EliminarSesionUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarSesionUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSesiones_ConsultarSesionUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarSesionUsuario" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSesiones_ConsultarSesionUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarSesionUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSesiones_CrearVariableUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:CrearVariableUsuario" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSesiones_CrearVariableUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CrearVariableUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSesiones_CrearListaVariablesUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:CrearListaVariablesUsuario" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSesiones_CrearListaVariablesUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CrearListaVariablesUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSesiones_EliminarVariableUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarVariableUsuario" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSesiones_EliminarVariableUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarVariableUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSesiones_EliminarListaVariablesUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarListaVariablesUsuario" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSesiones_EliminarListaVariablesUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarListaVariablesUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSesiones_EliminarVariablesNoPersistentesUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarVariablesNoPersistentesUsuario" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSesiones_EliminarVariablesNoPersistentesUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarVariablesNoPersistentesUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSesiones_ActualizarVariableUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:ActualizarVariableUsuario" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSesiones_ActualizarVariableUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ActualizarVariableUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSesiones_ActualizarListaVariablesUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:ActualizarListaVariablesUsuario" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSesiones_ActualizarListaVariablesUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ActualizarListaVariablesUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSesiones_ConsultarVariableUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarVariableUsuario" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSesiones_ConsultarVariableUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarVariableUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSesiones_ConsultarVariablesPorSesionUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarVariablesPorSesionUsuario" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSesiones_ConsultarVariablesPorSesionUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarVariablesPorSesionUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IServicioSesiones">
+    <wsdl:operation name="CrearSesion">
+      <wsdl:input wsaw:Action="http://www.bancobcr.com/IServicioSesiones/CrearSesion" message="tns:IServicioSesiones_CrearSesion_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.bancobcr.com/IServicioSesiones/CrearSesionResponse" message="tns:IServicioSesiones_CrearSesion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EliminarSesion">
+      <wsdl:input wsaw:Action="http://www.bancobcr.com/IServicioSesiones/EliminarSesion" message="tns:IServicioSesiones_EliminarSesion_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.bancobcr.com/IServicioSesiones/EliminarSesionResponse" message="tns:IServicioSesiones_EliminarSesion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarSesion">
+      <wsdl:input wsaw:Action="http://www.bancobcr.com/IServicioSesiones/ConsultarSesion" message="tns:IServicioSesiones_ConsultarSesion_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.bancobcr.com/IServicioSesiones/ConsultarSesionResponse" message="tns:IServicioSesiones_ConsultarSesion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CrearVariable">
+      <wsdl:input wsaw:Action="http://www.bancobcr.com/IServicioSesiones/CrearVariable" message="tns:IServicioSesiones_CrearVariable_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.bancobcr.com/IServicioSesiones/CrearVariableResponse" message="tns:IServicioSesiones_CrearVariable_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CrearListaVariables">
+      <wsdl:input wsaw:Action="http://www.bancobcr.com/IServicioSesiones/CrearListaVariables" message="tns:IServicioSesiones_CrearListaVariables_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.bancobcr.com/IServicioSesiones/CrearListaVariablesResponse" message="tns:IServicioSesiones_CrearListaVariables_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EliminarVariable">
+      <wsdl:input wsaw:Action="http://www.bancobcr.com/IServicioSesiones/EliminarVariable" message="tns:IServicioSesiones_EliminarVariable_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.bancobcr.com/IServicioSesiones/EliminarVariableResponse" message="tns:IServicioSesiones_EliminarVariable_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EliminarVariablesNoPersistentes">
+      <wsdl:input wsaw:Action="http://www.bancobcr.com/IServicioSesiones/EliminarVariablesNoPersistentes" message="tns:IServicioSesiones_EliminarVariablesNoPersistentes_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.bancobcr.com/IServicioSesiones/EliminarVariablesNoPersistentesResponse" message="tns:IServicioSesiones_EliminarVariablesNoPersistentes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ActualizarVariable">
+      <wsdl:input wsaw:Action="http://www.bancobcr.com/IServicioSesiones/ActualizarVariable" message="tns:IServicioSesiones_ActualizarVariable_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.bancobcr.com/IServicioSesiones/ActualizarVariableResponse" message="tns:IServicioSesiones_ActualizarVariable_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarVariable">
+      <wsdl:input wsaw:Action="http://www.bancobcr.com/IServicioSesiones/ConsultarVariable" message="tns:IServicioSesiones_ConsultarVariable_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.bancobcr.com/IServicioSesiones/ConsultarVariableResponse" message="tns:IServicioSesiones_ConsultarVariable_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarVariablesPorSesion">
+      <wsdl:input wsaw:Action="http://www.bancobcr.com/IServicioSesiones/ConsultarVariablesPorSesion" message="tns:IServicioSesiones_ConsultarVariablesPorSesion_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.bancobcr.com/IServicioSesiones/ConsultarVariablesPorSesionResponse" message="tns:IServicioSesiones_ConsultarVariablesPorSesion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ActualizarListaVariables">
+      <wsdl:input wsaw:Action="http://www.bancobcr.com/IServicioSesiones/ActualizarListaVariables" message="tns:IServicioSesiones_ActualizarListaVariables_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.bancobcr.com/IServicioSesiones/ActualizarListaVariablesResponse" message="tns:IServicioSesiones_ActualizarListaVariables_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EliminarSesionUsuario">
+      <wsdl:input wsaw:Action="http://www.bancobcr.com/IServicioSesiones/EliminarSesionUsuario" message="tns:IServicioSesiones_EliminarSesionUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.bancobcr.com/IServicioSesiones/EliminarSesionUsuarioResponse" message="tns:IServicioSesiones_EliminarSesionUsuario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarSesionUsuario">
+      <wsdl:input wsaw:Action="http://www.bancobcr.com/IServicioSesiones/ConsultarSesionUsuario" message="tns:IServicioSesiones_ConsultarSesionUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.bancobcr.com/IServicioSesiones/ConsultarSesionUsuarioResponse" message="tns:IServicioSesiones_ConsultarSesionUsuario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CrearVariableUsuario">
+      <wsdl:input wsaw:Action="http://www.bancobcr.com/IServicioSesiones/CrearVariableUsuario" message="tns:IServicioSesiones_CrearVariableUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.bancobcr.com/IServicioSesiones/CrearVariableUsuarioResponse" message="tns:IServicioSesiones_CrearVariableUsuario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CrearListaVariablesUsuario">
+      <wsdl:input wsaw:Action="http://www.bancobcr.com/IServicioSesiones/CrearListaVariablesUsuario" message="tns:IServicioSesiones_CrearListaVariablesUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.bancobcr.com/IServicioSesiones/CrearListaVariablesUsuarioResponse" message="tns:IServicioSesiones_CrearListaVariablesUsuario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EliminarVariableUsuario">
+      <wsdl:input wsaw:Action="http://www.bancobcr.com/IServicioSesiones/EliminarVariableUsuario" message="tns:IServicioSesiones_EliminarVariableUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.bancobcr.com/IServicioSesiones/EliminarVariableUsuarioResponse" message="tns:IServicioSesiones_EliminarVariableUsuario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EliminarListaVariablesUsuario">
+      <wsdl:input wsaw:Action="http://www.bancobcr.com/IServicioSesiones/EliminarListaVariablesUsuario" message="tns:IServicioSesiones_EliminarListaVariablesUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.bancobcr.com/IServicioSesiones/EliminarListaVariablesUsuarioResponse" message="tns:IServicioSesiones_EliminarListaVariablesUsuario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EliminarVariablesNoPersistentesUsuario">
+      <wsdl:input wsaw:Action="http://www.bancobcr.com/IServicioSesiones/EliminarVariablesNoPersistentesUsuario" message="tns:IServicioSesiones_EliminarVariablesNoPersistentesUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.bancobcr.com/IServicioSesiones/EliminarVariablesNoPersistentesUsuarioResponse" message="tns:IServicioSesiones_EliminarVariablesNoPersistentesUsuario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ActualizarVariableUsuario">
+      <wsdl:input wsaw:Action="http://www.bancobcr.com/IServicioSesiones/ActualizarVariableUsuario" message="tns:IServicioSesiones_ActualizarVariableUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.bancobcr.com/IServicioSesiones/ActualizarVariableUsuarioResponse" message="tns:IServicioSesiones_ActualizarVariableUsuario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ActualizarListaVariablesUsuario">
+      <wsdl:input wsaw:Action="http://www.bancobcr.com/IServicioSesiones/ActualizarListaVariablesUsuario" message="tns:IServicioSesiones_ActualizarListaVariablesUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.bancobcr.com/IServicioSesiones/ActualizarListaVariablesUsuarioResponse" message="tns:IServicioSesiones_ActualizarListaVariablesUsuario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarVariableUsuario">
+      <wsdl:input wsaw:Action="http://www.bancobcr.com/IServicioSesiones/ConsultarVariableUsuario" message="tns:IServicioSesiones_ConsultarVariableUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.bancobcr.com/IServicioSesiones/ConsultarVariableUsuarioResponse" message="tns:IServicioSesiones_ConsultarVariableUsuario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarVariablesPorSesionUsuario">
+      <wsdl:input wsaw:Action="http://www.bancobcr.com/IServicioSesiones/ConsultarVariablesPorSesionUsuario" message="tns:IServicioSesiones_ConsultarVariablesPorSesionUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.bancobcr.com/IServicioSesiones/ConsultarVariablesPorSesionUsuarioResponse" message="tns:IServicioSesiones_ConsultarVariablesPorSesionUsuario_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

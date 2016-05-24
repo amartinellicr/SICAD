@@ -1,0 +1,51 @@
+﻿body
+{
+    font-family: Arial;
+    font-size: 10pt;
+}
+.header_selected
+{
+    border: 1px solid #FF8C00;
+    color: #FFF;
+    background-color: #FF8C00;
+    font-weight: bold;
+    padding: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.header
+{
+    border: 1px solid #89BA06;
+    color: #fff;
+    background-color: #89BA06;
+    font-weight: bold;
+    padding: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.header a, .header_selected a
+{
+    color: #fff;
+    text-decoration: none;
+}
+.content
+{
+    background-color: #F6F6F6;
+}
+.content a, .content a:visited
+{
+    color: #000;
+    margin-left: 20px;
+}
+
+.nodo
+{
+    font-weight: bold;
+    font-style:italic;
+}
+
+.hoja
+{
+    font-weight: normal;
+    font-style: normal;
+}    

@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SicadActiveDirectoryWS" Collapsed="true">
+    <Position X="0.75" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAAAABAAABAAAAAAAAAAAAKAAA=</HashCode>
+      <FileName>SicadActiveDirectoryWS.asmx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SicadSesionesWS" Collapsed="true">
+    <Position X="6.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAISAAAAAYAAAAAIAAAAAAAAAgFAEwAAAIQQAAAAIEw=</HashCode>
+      <FileName>SicadSesionesWS.asmx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BCR.SICAD.WS.SicadCatalogosSugefWS" Collapsed="true">
+    <Position X="3" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>v//v36vb9f/X/3//r+/X/v//////f1XfZ+vf/d/7P/s=</HashCode>
+      <FileName>SicadCatalogosSugefWS.asmx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BCR.SICAD.WS.SicadClasesDatosWS" Collapsed="true">
+    <Position X="5.25" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>s+tH5K8C1zv/nX91j26+F35lOVnX1+E+b+arZpc0/VQ=</HashCode>
+      <FileName>SicadClasesDatosWS.asmx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BCR.SICAD.WS.SicadConfiguracionWS" Collapsed="true">
+    <Position X="7.25" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>FKUSggRCAmBlYCAiJITRFiDoAAbBEA08AAcABhxIQwM=</HashCode>
+      <FileName>SicadConfiguracionWS.asmx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BCR.SICAD.WS.SicadContenidoWS" Collapsed="true">
+    <Position X="0.75" Y="1.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAACIAABAABAEAAAAABAAAAAAAA=</HashCode>
+      <FileName>SicadContenidoWS.asmx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BCR.SICAD.WS.SicadListasWS" Collapsed="true">
+    <Position X="2.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>8nttTTmGZ77oYCL/nYz/REjKZHdOuN7oNghia9nXEZ0=</HashCode>
+      <FileName>SicadListasWS.asmx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BCR.SICAD.WS.SicadSeguridadWS" Collapsed="true">
+    <Position X="4.5" Y="1.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>QS4GACEYAAUigEHEAkUAQiRp0IhgGAYDAISBDNEIAGg=</HashCode>
+      <FileName>SicadSeguridadWS.asmx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BCR.SICAD.WS.SicadSiteMapWS" Collapsed="true">
+    <Position X="0.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgEAAAAAEAAAAAAAAABAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>SicadSiteMapWS.asmx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BCR.SICAD.WS.SicadProcesosWS" Collapsed="true">
+    <Position X="2.5" Y="2.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>IAAAEAAAAEAAAAAIAACCAAAAAADQEAAAAACCAAAAAAA=</HashCode>
+      <FileName>SicadProcesosWS.asmx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BCR.SICAD.WS.SicadHomologacionesWS" Collapsed="true">
+    <Position X="4.5" Y="2.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>qgGSSQTaAAgiIQAIREAK4A0AJABRFAoSQADIAIIWRFA=</HashCode>
+      <FileName>SicadHomologacionesWS.asmx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

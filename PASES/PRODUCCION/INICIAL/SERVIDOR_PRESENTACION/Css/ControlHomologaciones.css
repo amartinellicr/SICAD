@@ -1,0 +1,13 @@
+﻿body { }
+/*************************************************************************************************************************/
+.ch_botonNueva { height: 18px; width :17px;	}
+.ch_botonDetalle { height: 15px; width :15px; margin: 0px 5px 0px 5px; }
+.ch_btnInvisible { display: none; }
+.ch_divHeaderDetalle { font-family: tahoma; font-size: 11px; float: right; padding: 10px 5px; }
+.ch_lblError { font-family: tahoma; font-size: 11px; color: Red; }
+.ch_pnlPopup { display: none; background-color: White; border-color: Gray; border-style: solid; border-width: 1px; }
+/*************************************************************************************************************************/
+/*a:link {color:#404040;}      
+a:visited {color:#404040;} 
+a:hover {color:#404040;}  
+a:active {color:#404040;}*/

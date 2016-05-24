@@ -1,0 +1,5 @@
+﻿/*************************************************************************************************************************/
+/* ESTILOS COMUNES */
+.buttonMsgBox { width: 70px; color: #000000; background-color: #A4A4A4; border: solid 1px #000000; 
+	            font-family: Tahoma; font-size: 12px; text-align: center; height: 22px; }
+.buttonMsgBox:hover{ color: #00BFFF; background-color: #303030; border: solid 1px #424242; }

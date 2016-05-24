@@ -1,0 +1,427 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:i0="http://www.bancobcr.com" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ServicioSesiones" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="NetTcpBinding_IServicioSesiones_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <msb:BinaryEncoding xmlns:msb="http://schemas.microsoft.com/ws/06/2004/mspolicy/netbinary1" />
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:import namespace="http://www.bancobcr.com" location="" />
+  <wsdl:types />
+  <wsdl:binding name="BasicHttpBinding_IServicioSesiones" type="i0:IServicioSesiones">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CrearSesion">
+      <soap:operation soapAction="http://www.bancobcr.com/IServicioSesiones/CrearSesion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EliminarSesion">
+      <soap:operation soapAction="http://www.bancobcr.com/IServicioSesiones/EliminarSesion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarSesion">
+      <soap:operation soapAction="http://www.bancobcr.com/IServicioSesiones/ConsultarSesion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CrearVariable">
+      <soap:operation soapAction="http://www.bancobcr.com/IServicioSesiones/CrearVariable" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CrearListaVariables">
+      <soap:operation soapAction="http://www.bancobcr.com/IServicioSesiones/CrearListaVariables" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EliminarVariable">
+      <soap:operation soapAction="http://www.bancobcr.com/IServicioSesiones/EliminarVariable" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EliminarVariablesNoPersistentes">
+      <soap:operation soapAction="http://www.bancobcr.com/IServicioSesiones/EliminarVariablesNoPersistentes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActualizarVariable">
+      <soap:operation soapAction="http://www.bancobcr.com/IServicioSesiones/ActualizarVariable" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarVariable">
+      <soap:operation soapAction="http://www.bancobcr.com/IServicioSesiones/ConsultarVariable" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarVariablesPorSesion">
+      <soap:operation soapAction="http://www.bancobcr.com/IServicioSesiones/ConsultarVariablesPorSesion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActualizarListaVariables">
+      <soap:operation soapAction="http://www.bancobcr.com/IServicioSesiones/ActualizarListaVariables" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EliminarSesionUsuario">
+      <soap:operation soapAction="http://www.bancobcr.com/IServicioSesiones/EliminarSesionUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarSesionUsuario">
+      <soap:operation soapAction="http://www.bancobcr.com/IServicioSesiones/ConsultarSesionUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CrearVariableUsuario">
+      <soap:operation soapAction="http://www.bancobcr.com/IServicioSesiones/CrearVariableUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CrearListaVariablesUsuario">
+      <soap:operation soapAction="http://www.bancobcr.com/IServicioSesiones/CrearListaVariablesUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EliminarVariableUsuario">
+      <soap:operation soapAction="http://www.bancobcr.com/IServicioSesiones/EliminarVariableUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EliminarListaVariablesUsuario">
+      <soap:operation soapAction="http://www.bancobcr.com/IServicioSesiones/EliminarListaVariablesUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EliminarVariablesNoPersistentesUsuario">
+      <soap:operation soapAction="http://www.bancobcr.com/IServicioSesiones/EliminarVariablesNoPersistentesUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActualizarVariableUsuario">
+      <soap:operation soapAction="http://www.bancobcr.com/IServicioSesiones/ActualizarVariableUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActualizarListaVariablesUsuario">
+      <soap:operation soapAction="http://www.bancobcr.com/IServicioSesiones/ActualizarListaVariablesUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarVariableUsuario">
+      <soap:operation soapAction="http://www.bancobcr.com/IServicioSesiones/ConsultarVariableUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarVariablesPorSesionUsuario">
+      <soap:operation soapAction="http://www.bancobcr.com/IServicioSesiones/ConsultarVariablesPorSesionUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="NetTcpBinding_IServicioSesiones" type="i0:IServicioSesiones">
+    <wsp:PolicyReference URI="#NetTcpBinding_IServicioSesiones_policy" />
+    <soap12:binding transport="http://schemas.microsoft.com/soap/tcp" />
+    <wsdl:operation name="CrearSesion">
+      <soap12:operation soapAction="http://www.bancobcr.com/IServicioSesiones/CrearSesion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EliminarSesion">
+      <soap12:operation soapAction="http://www.bancobcr.com/IServicioSesiones/EliminarSesion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarSesion">
+      <soap12:operation soapAction="http://www.bancobcr.com/IServicioSesiones/ConsultarSesion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CrearVariable">
+      <soap12:operation soapAction="http://www.bancobcr.com/IServicioSesiones/CrearVariable" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CrearListaVariables">
+      <soap12:operation soapAction="http://www.bancobcr.com/IServicioSesiones/CrearListaVariables" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EliminarVariable">
+      <soap12:operation soapAction="http://www.bancobcr.com/IServicioSesiones/EliminarVariable" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EliminarVariablesNoPersistentes">
+      <soap12:operation soapAction="http://www.bancobcr.com/IServicioSesiones/EliminarVariablesNoPersistentes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActualizarVariable">
+      <soap12:operation soapAction="http://www.bancobcr.com/IServicioSesiones/ActualizarVariable" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarVariable">
+      <soap12:operation soapAction="http://www.bancobcr.com/IServicioSesiones/ConsultarVariable" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarVariablesPorSesion">
+      <soap12:operation soapAction="http://www.bancobcr.com/IServicioSesiones/ConsultarVariablesPorSesion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActualizarListaVariables">
+      <soap12:operation soapAction="http://www.bancobcr.com/IServicioSesiones/ActualizarListaVariables" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EliminarSesionUsuario">
+      <soap12:operation soapAction="http://www.bancobcr.com/IServicioSesiones/EliminarSesionUsuario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarSesionUsuario">
+      <soap12:operation soapAction="http://www.bancobcr.com/IServicioSesiones/ConsultarSesionUsuario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CrearVariableUsuario">
+      <soap12:operation soapAction="http://www.bancobcr.com/IServicioSesiones/CrearVariableUsuario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CrearListaVariablesUsuario">
+      <soap12:operation soapAction="http://www.bancobcr.com/IServicioSesiones/CrearListaVariablesUsuario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EliminarVariableUsuario">
+      <soap12:operation soapAction="http://www.bancobcr.com/IServicioSesiones/EliminarVariableUsuario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EliminarListaVariablesUsuario">
+      <soap12:operation soapAction="http://www.bancobcr.com/IServicioSesiones/EliminarListaVariablesUsuario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EliminarVariablesNoPersistentesUsuario">
+      <soap12:operation soapAction="http://www.bancobcr.com/IServicioSesiones/EliminarVariablesNoPersistentesUsuario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActualizarVariableUsuario">
+      <soap12:operation soapAction="http://www.bancobcr.com/IServicioSesiones/ActualizarVariableUsuario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActualizarListaVariablesUsuario">
+      <soap12:operation soapAction="http://www.bancobcr.com/IServicioSesiones/ActualizarListaVariablesUsuario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarVariableUsuario">
+      <soap12:operation soapAction="http://www.bancobcr.com/IServicioSesiones/ConsultarVariableUsuario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarVariablesPorSesionUsuario">
+      <soap12:operation soapAction="http://www.bancobcr.com/IServicioSesiones/ConsultarVariablesPorSesionUsuario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServicioSesiones">
+    <wsdl:port name="BasicHttpBinding_IServicioSesiones" binding="tns:BasicHttpBinding_IServicioSesiones">
+      <soap:address location="http://bcr0106asg92.bcr.fi.cr:14005/bcr.servicios.sesiones/BCR.InternetBanking.Sesiones.SVL.ServicioSesiones.svc" />
+    </wsdl:port>
+    <wsdl:port name="NetTcpBinding_IServicioSesiones" binding="tns:NetTcpBinding_IServicioSesiones">
+      <soap12:address location="net.tcp://bcr0106asg92.bcr.fi.cr:15005/bcr.servicios.sesiones/BCR.InternetBanking.Sesiones.SVL.ServicioSesiones.svc" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>net.tcp://bcr0106asg92.bcr.fi.cr:15005/bcr.servicios.sesiones/BCR.InternetBanking.Sesiones.SVL.ServicioSesiones.svc</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

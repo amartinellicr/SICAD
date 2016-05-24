@@ -1,0 +1,71 @@
+﻿body 
+{
+	font-family: Tahoma;
+	background-color: #FFFFFF;
+}
+
+div#header
+{
+	font-size: 24px;
+	font-family: Tahoma;
+	text-align: left;
+	height: 50px;
+	display: table-cell;
+	vertical-align: top;
+}
+
+.titulo
+{
+	font-weight: normal;
+	font-size: 20px;
+}
+
+.texto
+{
+	padding-left: 0px auto;
+	padding-right: 0px auto;	
+}
+
+.detalle
+{
+	font-family: Tahoma;
+	font-size: 12px;
+	/*background-color: #BDBDBD;
+	margin-left: 5%;
+	margin-right: 5%;*/
+}
+
+a:hover
+{
+background-color:#6699FF;
+}
+
+tr:hover
+{
+	/*background-color:#99CCFF;	*/
+	background-color:#cccccc;
+}
+
+div #hacer, #ocurrio, #sesion 
+{
+	font-family: Tahoma;
+	font-size: 12px;
+}
+
+table 
+{
+	/*background-image : url('../Imagenes/gradienteOp.png');
+	background-repeat : repeat-x;*/
+}
+
+.tdheader 
+{
+	background-image : url('../Imagenes/gradiente.png');
+	background-repeat : repeat-x;
+}
+
+.tdfooter 
+{
+	background-image : url('../Imagenes/gradienteOp.png');
+	background-repeat : repeat-x;
+}

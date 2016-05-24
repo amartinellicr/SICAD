@@ -1,0 +1,265 @@
+﻿#panelGrid {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    border-collapse: collapse;
+    border-style: none;
+}
+
+#divContenedorGrid {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border-style: none;
+}
+
+#divEncabezadoGrid {
+    background-image: url('../Imagenes/MasterGrid/hd_bg.gif');
+    height: 30px;
+    width: 100%;
+    position: absolute;
+}
+
+#divEncabezadoGridTituloMantenimiento {
+    height: 100%;
+    line-height: 15px;
+    right: auto;
+    width: auto;
+    position: absolute;
+    float: left;
+    left: 0;
+    vertical-align: middle;
+}
+
+.encabezadoGridTitulo {
+    font-size: 12px;
+    font-weight: bold;
+    color: #FFFFFF;
+    padding-left: 5px;
+}
+
+#divEncabezadoGridNuevo {
+    width: 90px;
+    bottom: 0;
+    float: right;
+    right: 500px;
+    top: 0;
+    position: absolute;
+}
+
+/*#divEncabezadoGridNuevo:hover
+{
+    background-image: url('../Imagenes/Menu/hd_hover_bg.gif');
+    background-repeat: repeat-x;
+}*/
+
+.botonNuevo:hover {
+    background-image: url('../Imagenes/MasterGrid/add.png');
+    background-color: #4272CF;
+    background-repeat: no-repeat;
+    background-position: left;
+    height: 100%;
+    width: 100%;
+    border-style: none;
+    cursor: pointer;
+    margin-right: 3px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.botonNuevo {
+    background-image: url('../Imagenes/MasterGrid/add.png');
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: left;
+    height: 100%;
+    width: 100%;
+    /*height: 18px;
+    width: 88px;*/
+    border-style: none;
+    cursor: pointer;
+    margin-right: 3px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+
+#divEncabezadoGridBuscar {
+    width: 500px;
+    bottom: 0;
+    float: right;
+    right: 0;
+    top: 0;
+    position: absolute;
+    vertical-align: middle;
+}
+
+#divGrid {
+    position: absolute;
+    top: 30px;
+    bottom: 30px;
+    left: 0;
+    float: left;
+    right: 0;
+    text-align: center;
+    border-collapse: collapse;
+    border-style: none;
+}
+
+#divPaginadorGrid {
+    font-size: 11px;
+    color: #000000;
+    background-image: url('../Imagenes/MasterGrid/pager_bg.gif');
+    background-repeat: repeat-x;
+    text-align: center;
+    position: absolute;
+    height: 30px;
+    bottom: 0;
+    left: 0;
+    float: left;
+    right: 0;
+}
+
+.controlBusqueda {
+    font-size: 11px;
+    width: auto;
+    max-width: 290px;
+    min-width: 250px;
+}
+
+.controlBusquedaCajaTexto {
+    font-size: 11px;
+    width: 155px;
+    text-transform: uppercase;
+}
+
+/*************************************************************************************************************************/
+/*GRID VIEW*/
+.mainGridView {
+    border: none;
+    border-collapse: collapse;
+    font-size: 11px;
+    color: #000000;
+}
+
+.headerGridView {
+    background-color: #D6DEFE;
+    color: #000000;
+    height: 27px;
+    font-size: 12px;
+    border: 1px solid #D6DEFE;
+}
+
+    .headerGridView th {
+        border: 1px solid #D6DEFE;
+    }
+
+.rowGridView {
+    background-color: #FFFFFF;
+    color: #000000;
+    border: 1px solid #FFFFFF;
+}
+
+    .rowGridView td {
+        border: 1px solid #FFFFFF;
+    }
+
+    .rowGridView:hover {
+        background-color: #F2F5A9;
+        color: #000000;
+        border: 1px solid #F2F5A9;
+    }
+
+.rowGridViewSelected {
+    background-color: #C1EEDD;
+    color: #000000;
+    border: 1px solid #C1EEDD;
+}
+
+    .rowGridViewSelected td {
+        border: 1px solid #C1EEDD;
+    }
+
+
+.alternateRowGridView {
+    background-color: #F5F5F9;
+    color: #000000;
+    border: 1px solid #F5F5F9;
+}
+
+    .alternateRowGridView td {
+        border: 1px solid #F5F5F9;
+    }
+
+    .alternateRowGridView:hover {
+        background-color: #F2F5A9;
+        color: #000000;
+        border: 1px solid #F2F5A9;
+    }
+
+#lblSinDatos {
+    color: #CD5C5C;
+    font-weight: bold;
+    font-size: 11px;
+    text-align: center;
+}
+
+/*************************************************************************************************************************/
+/*PAGINADOR*/
+.paginadorPrimero {
+    background-image: url('~/Imagenes/MasterGrid/first_bg.gif');
+    background-repeat: repeat-x;
+    text-align: center;
+}
+
+.paginadorAnterior {
+    background-image: url('~/Imagenes/MasterGrid/prev_bg.gif');
+    background-repeat: repeat-x;
+    text-align: center;
+}
+
+.paginadorSiguiente {
+    background-image: url('~/Imagenes/MasterGrid/next_bg.gif');
+    background-repeat: repeat-x;
+    text-align: center;
+}
+
+.paginadorUltimo {
+    background-image: url('~/Imagenes/MasterGrid/last_bg.gif');
+    background-repeat: repeat-x;
+    text-align: center;
+}
+
+/*************************************************************************************************************************/
+/*TABLAS GRID HOMOLOGACIONES*/
+/*************************************************************************************************************************/
+#gridHML table {
+    height: 100%;
+    width: 100%;
+}
+
+#gridHML .FilaGrid {
+    height: 48%;
+}
+
+#gridHML .FilaGridVacia {
+    height: 4%;
+}
+
+.encabezadoGridDetalleTitulo {
+    font-size: 12px;
+    font-weight: bold;
+    color: #FFFFFF;
+    padding-left: 5px;
+   
+}
+
+.gridDetalleEncabezado {
+    background-image: url('../Imagenes/MasterGrid/hd_bg.gif');
+    height: 30px;
+    width: 100%;
+    float:right;
+    
+}

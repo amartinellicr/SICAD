@@ -1,0 +1,48 @@
+﻿.UploadControl
+{
+    background-color: #CCCCCC;
+    color: #000000;
+    border: 1px solid #000000;
+    font-size: 12px;
+    padding: 1px 4px;
+    position: relative;
+    height: 21px; 
+    Width: 400px;
+}
+
+#ddlListaArchivos {
+    width:300px;
+}
+
+#tblTransferenciaArchivos {
+    width: 100%;
+    height: 85%;
+}
+
+#tdTransferenciaArchivoContenedor {
+    text-align: center; 
+    vertical-align: middle; 
+    height: 100%; 
+    width: 100%;
+}
+
+.tdTransferenciaArchivoEspaciadorGeneral {
+    height: 5px;
+}
+
+.tdTransferenciaArchivoEspaciador {
+    height: 20px;
+}
+
+.tdTransferenciaArchivoControl {
+    width: 400px; 
+    height: 21px;
+    text-align: left;
+}
+
+.tdTransferenciaArchivoControlEtiqueta {
+    width: 130px;
+    height: 21px;
+    text-align: left;
+    white-space: nowrap;
+}

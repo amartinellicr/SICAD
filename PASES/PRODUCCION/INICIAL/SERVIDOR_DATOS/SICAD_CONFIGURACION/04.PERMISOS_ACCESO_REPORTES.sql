@@ -1,0 +1,246 @@
+USE [SICAD_CONFIGURACION]
+GO
+
+/* TABLAS */
+
+GRANT SELECT ON dbo.PARAMETRO TO RAP_AccesoReportes
+GO
+
+GRANT SELECT ON dbo.ENTIDAD TO RAP_AccesoReportes
+GO
+
+
+
+
+
+/* VISTAS */
+
+
+/* SPs */
+
+GRANT EXECUTE ON Rpt_Area TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON Rpt_Categoria_Riesgo TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON Rpt_Cuentas TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON Rpt_Division TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON Rpt_Entidades_Recalificadoras TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON rpt_ERRORES_GARANTIAS TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON Rpt_Estado_Colocaciones_Por_Area_y_Division TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON Rpt_Fecha_Corte_Anterior TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON rpt_LISTA_DE_CLIENTES_RECALIFICADOS TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON Rpt_Modulos TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON Rpt_Oficina TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON Rpt_Oficina_Asociada_Al_Deudor TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON Rpt_Oficina_COD TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON Rpt_Oficinas TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON Rpt_Param_Bitacora_Sist_Anho TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON Rpt_Param_Bitacora_Sist_Mes TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON Rpt_Param_Fecha_Corte TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON Rpt_Param_Grupo_Interes TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON Rpt_Param_Jerarquia_Usuario TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON Rpt_Param_Modulo TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON Rpt_Param_Oficinas TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON Rpt_Report_Avaluos_Con_Mas_De_5_Annios TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON [Rpt_Reporte Comparacion de Operaciones_Garat_mes_act] TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON [Rpt_Reporte Comparacion de Operaciones_Garat_mes_ant] TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON [Rpt_Reporte Comparacion de Operaciones_Oper_mes_act] TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON [Rpt_Reporte Comparacion de Operaciones_Oper_mes_ant] TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON [Rpt_Reporte_Asiento_Contable_814–619_Ajustes_Sobre_Los_Datos_Contables] TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON [Rpt_Reporte_Asiento_Contable_814–619_BD_SICAD] TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON [rpt_REPORTE_ASIENTO_CONTABLE_814–619_CONTABILIDAD_BCR] TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON [Rpt_Reporte_Asiento_Contable_814-619_Contabilidad_BCR] TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON rpt_REPORTE_AVALUOS_CON_MAS_DE_5_AÑOS TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON Rpt_Reporte_Balanceo_Detalle TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON Rpt_Reporte_Balanceo_Detalle_Por_Cuenta TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON Rpt_Reporte_Balanceo_Por_Validaciones TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON Rpt_Reporte_Bitacora_Del_Sistema TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON Rpt_Reporte_Bitacora_Del_Sistema_Usuario TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON Rpt_Reporte_Calificacion_Historica_Riesgo_Deudor_Conjunto_Castigos_Al_Corte TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON Rpt_Reporte_Calificacion_Historica_Riesgo_Deudor_Conjunto_Deudores_Al_Corte TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON Rpt_Reporte_Calificacion_Historica_Riesgo_Deudor_Conjunto_Operaciones_Al_Corte TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON Rpt_Reporte_Cierre_Contable TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON Rpt_Reporte_Comparacion_De_Garantias_Conjunto_Castigos_Subconjunto_Mes_Actual_Castigos TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON Rpt_Reporte_Comparacion_De_Garantias_Conjunto_Castigos_Subconjunto_Mes_Anterior_Castigos TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON Rpt_Reporte_Comparacion_De_Garantias_Conjunto_Valores_Subconjunto_Mes_Actual_Garantia TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON Rpt_Reporte_Comparacion_De_Garantias_Conjunto_Valores_Subconjunto_Mes_Anterior_Garantia TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON Rpt_Reporte_Comparativo_De_Provision TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON Rpt_Reporte_Comparativo_Integridad_De_Cedulas TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON Rpt_Reporte_Comportamiento_Historico_Por_Cliente TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON Rpt_Reporte_Condicion_De_Poliza TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON Rpt_Reporte_Configuracion_Por_Periodos TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON Rpt_Reporte_Control_De_Operaciones_Nuevas TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON Rpt_Reporte_Creditos_Sindicados TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON Rpt_Reporte_De_Operaciones_Generales TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON Rpt_Reporte_Deudores_Con_Castigos_OCE TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON Rpt_Reporte_Errores_Garantias TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON Rpt_Reporte_Estado_De_Colocaciones_Por_Area_Y_Division TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON Rpt_Reporte_Flujo_de_Procesos TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON Rpt_Reporte_Flujo_De_Procesos TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON Rpt_Reporte_Garantias_Totales_Por_Operacion_Conjunto_Deudores TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON Rpt_Reporte_Garantias_Totales_Por_Operacion_Conjunto_Operacion_Garantia_Subconjunto_Garantia TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON Rpt_Reporte_Garantias_Totales_Por_Operacion_Conjunto_Operacion_Garantia_Subconjunto_Operaciones TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON Rpt_Reporte_Grupo_De_Interes TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON Rpt_Reporte_Inconsistencias_Por_Validaciones_Y_Alertas TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON Rpt_Reporte_Informacion_Finanzas TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON Rpt_Reporte_Inspecciones_Vencidas TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON Rpt_Reporte_Lista_De_Clientes_Recalificados TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON Rpt_Reporte_Mayores_Deudores_Provision TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON Rpt_Reporte_Mayores_Deudores_Provision_Principal TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON Rpt_Reporte_Mayores_Deudores_Provision_Secundario TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON Rpt_Reporte_Morosidad_Por_Region_Detalle TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON Rpt_Reporte_Morosidad_Por_Region_General TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON Rpt_Reporte_Operaciones_Con_Cambio_De_Estados TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON Rpt_Reporte_Operaciones_Con_Cambio_Estado TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON Rpt_Reporte_Operaciones_Por_Cuenta_Contable TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON Rpt_Reporte_Seguridad_Usuarios_Grupos_Y_Roles TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON Rpt_Reporte_Validacion_De_Integridad_Personas_Mensaje_A TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON Rpt_Reporte_Validacion_De_Integridad_Personas_Mensaje_B TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON Rpt_Reporte_Validacion_De_Integridad_Personas_Mensaje_C TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON Rpt_Reporte_Validacion_De_Integridad_Personas_Mensaje_D TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON Rpt_Reporte_Valores_Historicos_Garantias_Conjunto_Calculo_Valor_Actualizado TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON Rpt_Reporte_Valores_Historicos_Garantias_Conjunto_Generales TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON Rpt_Reporte_Valores_Historicos_Garantias_Conjunto_Porcentajes_Aceptacion_Y_Valores_Mitigacion TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON Rpt_Reporte_Valores_Historicos_Garantias_Conjunto_Tasadores TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON Rpt_Seguridad_Usuario_Grupo_Rol TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON Rpt_Tipo_Estado_Operacion TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON Rpt_Tipo_Garantia TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON Rpt_Tipo_Inconsistencia TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON Rpt_Tipo_Operacion_Especial TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON sp_rpt_ASIENTO_CONTABLE_814_619_AJUSTE TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON sp_rpt_ASIENTO_CONTABLE_814_619_FUENTE TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON sp_rpt_CALIFICACION_RIESGO_DEUDOR_CASTIGOS TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON sp_rpt_CALIFICACION_RIESGO_DEUDOR_DATOS TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON sp_rpt_CALIFICACION_RIESGO_DEUDOR_OPERACION TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON sp_rpt_cambio_cat_riesgo TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON sp_rpt_empresa TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON sp_rpt_GARANTIAS_OPERACION_DEUDOR TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON sp_rpt_GARANTIAS_OPERACION_OPERACIONES TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON sp_rpt_INCONSISTENCIA_VALIDACIONES TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON sp_rpt_LISTA_CLIENTES_RECALIFICADOS TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON sp_rpt_MOROSIDAD_POR_REGION_DETALLE TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON sp_rpt_MOROSIDAD_POR_REGION_GENERAL TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON sp_rpt_OPERACIONES_CON_CAMBIO_ESTADO TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON sp_rpt_PARAM_BLOQUE TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON sp_rpt_PARAM_ENTIDAD_RECALIFICADORA TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON sp_rpt_PARAM_FECHA_CORTE TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON sp_rpt_PARAM_FECHA_CORTE_FIN TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON sp_rpt_PARAM_FECHA_CORTE_INICIO TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON sp_rpt_PARAM_OFICINA TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON sp_rpt_PARAM_REGION TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON sp_rpt_PARAM_TIPO_VALIDACION TO RAP_AccesoReportes
+GO
+GRANT EXECUTE ON sp_rpt_TIPO_INCONSISTENCIA TO RAP_AccesoReportes
+GO
+
+/* FNs */
+
+
+/* TFs */
+

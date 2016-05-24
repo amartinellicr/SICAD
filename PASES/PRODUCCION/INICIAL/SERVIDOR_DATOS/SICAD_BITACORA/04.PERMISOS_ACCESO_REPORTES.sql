@@ -1,0 +1,9 @@
+USE [SICAD_BITACORA]
+GO
+
+/* TABLAS */
+
+GRANT SELECT ON dbo.BITACORA_2016 TO RAP_AccesoReportes
+GO
+
+

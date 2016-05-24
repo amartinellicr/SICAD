@@ -1,0 +1,723 @@
+﻿/*************************************************************************************************************************/
+/*ESTILO ESTRUCTURA*/
+body, form {
+    height: 100%;
+    width: 99.9%;
+    margin: 0px 0px 0px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#divContenedor {
+    height: 100%;
+    width: 100%;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    float: left;
+}
+
+#divImagenes {
+    height: 60px;
+    width: 100%;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 0;
+    left: 0;
+    float: left;
+}
+
+#divImagenesBCR {
+    background-color: #FFFFFF;
+    width: 250px;
+    position: absolute;
+    float: left;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    /*line-height:150px;*/
+    text-align: center;
+}
+
+#divImagenesSicad {
+    background-color: #FFFFFF;
+    position: absolute;
+    float: right;
+    right: 0;
+    left: 250px;
+    top: 0;
+    bottom: 0; /*line-height:150px;*/
+    text-align: left;
+    background-image: url('../Imagenes/LogIn/BannerSuperiorBK.jpg');
+    background-repeat: repeat-x;
+}
+
+#divDatos {
+    height: 30px;
+    line-height: 27px;
+    width: 100%;
+    background-color: #012363;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    float: left;
+    vertical-align: middle;
+    text-align: right;
+}
+
+#divContenedorPrincipal {
+    height: 100%;
+    width: 100%;
+    background-color: #FFFFFF;
+}
+
+#divContenedorPrincipalMenu {
+    width: 250px;
+    background-color: #FFFFFF;
+    position: absolute;
+    float: left;
+    left: 0;
+    top: 92px;
+    bottom: 34px;
+}
+
+#divContenedorPrincipalDatos {
+    position: absolute;
+    background-color: #FFFFFF;
+    float: left;
+    left: 252px;
+    right: 0;
+    top: 92px;
+    bottom: 32px;
+}
+
+#pnlCPH {
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    bottom: 2px;
+    left: 2px;
+    float: right;
+    border: 1px solid #666666;
+}
+
+#divPie {
+    height: 30px;
+    line-height: 27px;
+    width: 100%;
+    background-color: #666666;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    float: left;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.divSinDatos {
+    background-color: #F2F5A9;
+    text-align: center;
+}
+
+.lblSinDatos {
+    font-weight: bold;
+    color: #f00;
+}
+
+.errorControl {
+    color: #f00;
+}
+
+#ajaxSlider {
+    display: inline;
+}
+
+.lblProceso {
+    font-size: 12px;
+    font-weight: bold;
+    color: #000000;
+    padding-left: 5px;
+}
+
+
+/*************************************************************************************************************************/
+/*MENU ACCORDION SITEMAP*/
+.acordion {
+    font-size: 12px;
+    background: url(../Imagenes/Menu/item_bg.gif);
+    color: #000;
+    width: 100%;
+    height: 100%;
+}
+
+    .acordion a:visited {
+        color: #FFF;
+    }
+
+    .acordion a:hover {
+        /*color: #FFFFFF;*/
+    }
+
+    .acordion .header {
+        cursor: pointer;
+        background: url(../Imagenes/Menu/hd_bg.gif) repeat-x;
+        font-weight: bold;
+        padding-top: 8px;
+        display: block;
+        color: #fff;
+        height: 22px;
+    }
+
+        .acordion .header DIV {
+            cursor: pointer;
+            height: 100%;
+            padding-left: 30px;
+            background-color: Transparent;
+            background-position: center left;
+            background-repeat: no-repeat;
+        }
+
+        .acordion .header SPAN {
+            cursor: pointer;
+            font-weight: bold;
+            display: block;
+            padding-top: 8px;
+            color: #fff;
+        }
+
+        .acordion .header:hover {
+            cursor: pointer;
+            height: 22px;
+            background-color: Transparent;
+            background: url(../Imagenes/Menu/hd_hover_bg.gif) repeat-x;
+        }
+
+    .acordion .contenido {
+        padding: 6px 5px 6px 8px;
+        font-size: 11px;
+        color: #000000;
+    }
+
+    .acordion UL {
+        padding: 0;
+        margin: 5px 5px 5px 15px;
+        list-style-type: none;
+    }
+
+    .acordion LI {
+        background-color: Transparent;
+        background-repeat: no-repeat;
+        background-position: left center;
+        vertical-align: middle;
+        padding: 6px 5px 6px 25px;
+        cursor: hand;
+        display: none;
+    }
+
+        .acordion LI DIV {
+            padding-left: 10px;
+            color: #666666;
+            cursor: hand;
+        }
+
+        .acordion LI:hover {
+            text-decoration: underline;
+        }
+
+.nodo {
+    color: #000;
+}
+
+    .nodo:link {
+        color: #000;
+    }
+
+    .nodo:visited {
+        color: #000;
+    }
+
+    .nodo:hover {
+        color: #000;
+        cursor: default;
+    }
+
+    .nodo:active {
+        color: #000;
+    }
+
+.hoja {
+    color: #000;
+}
+
+    .hoja:link {
+        color: #000;
+    }
+
+    .hoja:visited {
+        color: #000;
+    }
+
+    .hoja:hover {
+        color: #0000CC;
+        cursor: pointer;
+    }
+
+    .hoja:active {
+        color: #000;
+    }
+
+
+.menucontenedor {
+    position: absolute;
+    width: 98%;
+    top: 2px;
+    bottom: 0;
+    left: 2px;
+    float: left;
+    border: 1px solid #666666;
+}
+/*************************************************************************************************************************/
+/*SECCION DE DATOS*/
+.etiquetasDatos, .etiquetasDatosCerrarSesion {
+    font-size: 12px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+    .etiquetasDatosCerrarSesion:hover {
+        font-size: 12px;
+        color: #FFFFFF;
+        text-decoration: underline;
+    }
+
+/*************************************************************************************************************************/
+/*GENERAL*/
+.tablaCentrada {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+    .tablaCentrada td {
+        vertical-align: middle;
+        border: none;
+    }
+
+.tablaCentradaSinAncho {
+    height: 100%;
+}
+
+    .tablaCentradaSinAncho td {
+        vertical-align: middle;
+    }
+
+
+
+/*************************************************************************************************************************/
+/* HEADER STYLES */
+/*.headerstyle th { border-left: medium none #989898; border-right: 1px solid #cbcbcb; border-top: 1px solid #989898; border-bottom: 1px solid #989898; 
+					background: #336699 url(../Imagenes/title-bg.gif) repeat-x 0px 0px; color: #ffffff; padding: 4px 5px 4px 10px; text-align: center;
+    				vertical-align: middle; }  
+.headerstyle th a { color:#ffffff; font-weight: bold; text-decoration: underline; display: block; padding-right: 10px; } 
+.headerstyle .sortascheader a { background: url(../Imagenes/Paneles/dt-arrow-up.gif) no-repeat right 50%; } 
+.headerstyle .sortdescheader { background: url(../Imagenes/Paneles/sprite.png) repeat-x 0px -100px; }   
+.headerstyle .sortdescheader a { background: url(../Imagenes/Paneles/dt-arrow-dn.png) no-repeat right 50%; } 
+.headerstyle .sortascheader { background: url(../Imagenes/Paneles/sprite.gif) repeat-x 0px -100px; }*/
+/* ROW STYLES */
+/*.rowstyle .sortaltrow, .altrowstyle .sortaltrow { background-color: #edf5ff; }
+.rowstyle .sortrow, .altrowstyle .sortrow { background-color: #dbeaff; }menucontainer
+.rowstyle td, .altrowstyle td, .selectedrowstyle td { padding: 4px 10px 4px 10px; border-right: solid 1px #cbcbcb; }*/
+/* ALTROW STYLES */
+/*.altrowstyle { background-color : #E8E8E8; }*/
+/* SELECTED STYLES */
+/*.selectedrowstyle { background-color: #A4A4A4; font-weight: bold; }*/
+/*************************************************************************************************************************/
+/* FILTER STYLES */
+.filter {
+    float: right;
+    font-weight: bold;
+    padding: 10px 6px 0px 0px;
+}
+
+    .filter INPUT {
+        width: 150px;
+    }
+/*************************************************************************************************************************/
+/* PANEL STYLES */
+.panel {
+    font-family: Tahoma;
+    color: #222222;
+}
+    /* PANEL HEADER STYLES */
+    .panel .header {
+        color: #fff;
+    }
+
+        .panel .header .outer {
+            background: url(../Imagenes/Paneles/top-right.gif) right no-repeat;
+            padding-right: 6px;
+        }
+
+        .panel .header .inner {
+            background: url(../Imagenes/Paneles/top-left.gif) left no-repeat;
+            padding-left: 6px;
+        }
+
+        .panel .header .content {
+            height: 38px;
+            background: url(../Imagenes/Paneles/top-mid.gif) repeat-x;
+        }
+    /* PANEL BODY STYLES */
+    .panel .body {
+    }
+
+        .panel .body .outer {
+            background: url(../Imagenes/Paneles/right.gif) right repeat-y;
+        }
+
+        .panel .body .inner {
+            background: url(../Imagenes/Paneles/left.gif) left repeat-y;
+        }
+    /* PANEL FOOTER STYLES */
+    .panel .footer .outer {
+        background: url(../Imagenes/Paneles/bottom-right.gif) right top no-repeat;
+    }
+
+    .panel .footer .inner {
+        background: url(../Imagenes/Paneles/bottom-left.gif) left top no-repeat;
+    }
+
+    .panel .footer .content {
+        height: 6px;
+        background: url(../Imagenes/Paneles/bottom-mid.gif) repeat-x;
+    }
+/*************************************************************************************************************************/
+/* Detail Grid */
+.detail {
+    font-size: 11px;
+    background-color: #fff;
+    border: solid 1px #000;
+    padding: 4px;
+}
+
+    .detail .footer {
+        text-align: right;
+        padding: 8px;
+    }
+
+/* table style */
+.detailgrid {
+    border: solid 2px #ad9e97;
+}
+
+    /* cell styles */
+    .detailgrid td {
+        cursor: default;
+        color: #000;
+        padding: 2px 8px;
+        border-right-style: solid;
+        border-right-width: 2px;
+        border-right-color: #f2e8da;
+        border-bottom-style: solid;
+        border-bottom-width: 2px;
+        border-bottom-color: #f2e8da;
+    }
+
+/*************************************************************************************************************************/
+
+
+.panelMoverPopupDetalle {
+    background-image: url(../Imagenes/VentanasPopup/header.png);
+    height: 25px;
+    width: 100%;
+    cursor: move;
+    color: White;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: Tahoma, Lucida Sans Unicode, Trebuchet MS;
+    vertical-align: middle;
+}
+
+.resumenErrores {
+    font-size: 11px;
+    font-family: Tahoma;
+}
+/*************************************************************************************************************************/
+/*GRIDS HOMOLOGACIONES*/
+
+.gridsArea {
+    height: 100%;
+}
+
+#divGridMaestro {
+    bottom: 52%;
+    float: left;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+
+#divGridHomologacion {
+    top: 52%;
+    bottom: 0;
+    float: left;
+    left: 0;
+    position: absolute;
+    right: 0;
+}
+
+#divSeparadorHml {
+    position: absolute;
+    float: left;
+    left: 0;
+    top: 48%;
+    right: 0;
+    bottom: 48%;
+}
+
+
+#divGridProceso {
+    top: 120px;
+    bottom: 0;
+    float: left;
+    left: 0;
+    position: absolute;
+    right: 0;
+}
+
+/************************************************************
+    CONTROLES PROCESOS
+************************************************************/
+.gridPager {
+    background-image: url('../Imagenes/MasterGrid/pager_bg.gif');
+    background-repeat: repeat-x;
+    height: 30px;
+}
+
+    .gridPager a, .gridPager span {
+        display: block;
+        height: 15px;
+        width: 15px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .gridPager a {
+        background-color: #f5f5f5;
+        color: #969696;
+        border: 1px solid #969696;
+    }
+
+    .gridPager span {
+        background-color: #A1DCF2;
+        color: #000;
+        border: 1px solid #3AC0F2;
+    }
+
+
+.tablaPrincipal {
+    width: 100%;
+    border-style: none;
+    border-collapse: collapse;
+}
+
+.pnlFechaHora {
+    border: 1px solid #C0C0C0;
+}
+
+.tablaDescargaArchivos {
+    width: 100%;
+    border-style: none;
+    border-collapse: collapse;
+}
+
+.gridDescargaArchivosEncabezado {
+    background-image: url('../Imagenes/MasterGrid/hd_bg.gif');
+    background-repeat: repeat-x;
+    height: 30px;
+    text-align: center;
+}
+
+.divlblFiltro {
+    float: left;
+    padding: 0px 0px 0px 5px;
+}
+
+.divddlFiltro {
+    float: right;
+    padding: 0px 10px 0px 0px;
+}
+
+
+#lblArchivos {
+    color: #ffffff;
+    font-family: Tahoma;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#ddlArchivo {
+    font-family: Tahoma;
+    font-size: 11px;
+}
+
+.tablaArchivo {
+    height: 100%;
+    width: 100%;
+    border-style: none;
+    border-collapse: collapse;
+}
+
+.ptcReporte {
+    display: none;
+    border: 2px solid #333333;
+}
+
+.tablaReporte {
+    width: 100%;
+    height: 98px;
+    border: 0;
+}
+
+.divReportes {
+    border: 4px solid #000000;
+    width: 625px;
+    left: 50%;
+}
+
+    .divReportes div {
+        float: left;
+        background-image: url('../Imagenes/MasterGrid/hd_bg.gif');
+        height: 30px;
+        width: 615px;
+        padding-left: 10px;
+        position: relative;
+        border-bottom: 1px solid #333333;
+    }
+
+    .divReportes label {
+        font-family: Tahoma;
+        font-size: 15px;
+        font-weight: bold;
+        color: #ffffff;
+        padding-top: 2px;
+    }
+
+.tdDdlProceso {
+    width: 300px;
+}
+
+.tdTipoProgramacion {
+    width: 130px;
+}
+
+#lblLetraPeq p {
+    color: #666666;
+    font-size: 10px;
+}
+
+.rblCalendarizacion {
+    border: 1px solid #C0C0C0;
+    width: 120px;
+    font-size: 12px;
+    color: #000000;
+    padding-left: 5px;
+}
+
+.tdNumRegistro {
+    width: 105px;
+}
+
+.tdbtnConsultar {
+    width: 80px;
+}
+
+.columnaInicio {
+    width: 20px;
+}
+
+.tdlblRegistroMostrar {
+    width: 140px;
+}
+
+.divUptProgreso {
+    margin-top: 13px;
+}
+
+.divIframe {
+    height: 99.5%;
+    width: 99.5%;
+    position: absolute;
+    float: left;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+}
+/*Tablas DIV*/
+
+/*#main { width:928px; padding: 2px 2px 2px 2px; }
+.left { width: 170px; float:left; padding: 3px 2px 3px 2px; }
+.right { width: 750px; float:left; padding: 3px 2px 3px 2px;  }*/
+
+/*body 
+{
+	
+	margin: 2px;
+	background-image: url(../Imagenes/Aplicacion/bg_inicio.jpg);	
+	background-color: #FFFFFF;
+	background-repeat: repeat;
+}*/
+
+
+/*.menuEstatico 
+{
+    background-image:	url(../Imagenes/Menu/chromebg.gif);
+    background-repeat:	repeat-x;
+	background-color :	#FFFFFF;    
+}
+
+.menuDinamico
+{
+    background-image:	url(../Imagenes/Menu/chromebg2.gif);
+    background-repeat:	repeat-x;
+	background-color :	#FFFFFF;    
+}
+div#header
+{
+	position:			relative;
+	width:				100%;
+	height:				95px;
+	background-repeat:	no-repeat;
+	background-color :	#FFFFFF;
+}
+
+div#footer
+{
+	position: relative;
+	width: 100%;
+	/*height: 60px;
+	background-repeat: no-repeat;
+	background-color: #FFFFFF;
+	background-color: Transparent;
+    background: url(../Imagenes/Aplicacion/bg_inicio.jpg); 
+}
+
+div #error 
+{
+	margin-left : 0px auto;
+	margin-right : 0px auto;
+}*/
+/*************************************************************************************************************************/
+/*.subMenu 
+{
+	background-image: url(../Imagenes/Menu/SubMenu/repeat.png);
+	background-repeat: repeat-x;
+	background-color: #FFFFFF;
+}*/
+
+/*************************************************************************************************************************/

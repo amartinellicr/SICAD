@@ -1,0 +1,155 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Container.master.cs" Inherits="Container" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+<%@ Register Src="~/MensajePopUp/InformarPopUp/InformarPopUp.ascx" TagName="MensajeInformar" TagPrefix="uc3" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <!-- MIMIC INTERNET EXPLORER 8 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <title>SICAD</title>
+
+    <%--HOJAS DE ESTILO (CSS)--%>
+    <link href="Css/StyleSheet.css" rel="stylesheet" type="text/css" />
+    <link href="Css/ModalPopUp.css" rel="stylesheet" type="text/css" />
+    <link href="Css/MsgBoxPopUp.css" rel="stylesheet" type="text/css" />
+    <link href="Css/ControlHomologaciones.css" rel="stylesheet" type="text/css" />
+    
+    <script language="javascript" type="text/javascript">
+       <%--    function filterTextBox(txb) {
+            var filter = new RegExp("-{0,1}[0-9 \,]*");
+            if (!filter.test(txb.value)) txb.length -= 1;
+        }--%>
+        //Sitemap
+        function selectedNode(_ruta, idSesionOculto, codUsuarioOculto, codEmpresaOculto, pantallaModuloOculto) {
+            var form = document.createElement("form");
+
+            form.setAttribute("id", "Form1");
+            form.setAttribute("name", "PostForm");
+            form.setAttribute("action", ValidateUrl(_ruta));
+            form.setAttribute("method", "post");
+            form.setAttribute("target", "_self");
+
+            newInput1 = document.createElement('input');
+            newInput1.type = 'hidden';
+            newInput1.name = 'idSesion';
+            newInput1.value = idSesionOculto;
+
+            newInput2 = document.createElement('input');
+            newInput2.type = 'hidden';
+            newInput2.name = 'codUsuario';
+            newInput2.value = codUsuarioOculto;
+
+            newInput3 = document.createElement('input');
+            newInput3.type = 'hidden';
+            newInput3.name = 'codEmpresa';
+            newInput3.value = codEmpresaOculto;
+
+            newInput4 = document.createElement('input');
+            newInput4.type = 'hidden';
+            newInput4.name = 'pantallaModulo';
+            newInput4.value = pantallaModuloOculto;
+
+            form.appendChild(newInput1);
+            form.appendChild(newInput2);
+            form.appendChild(newInput3);
+            form.appendChild(newInput4);
+            document.body.appendChild(form);
+
+            form.submit();
+            document.body.removeChild(form);
+
+            function ValidateUrl(s) {
+                if (self.location.href.search("GarantiaOper") != -1) {
+                    return "../../../" + s;
+                }
+                else {
+                    if (self.location.href.search("Formularios") != -1) {
+                        return "../../" + s;
+                    }
+                    else {
+                        return s;
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body id="Body1" runat="server" onkeydown="javascript:if(window.event.keyCode == 13) window.event.keyCode = 9;">
+
+    <script language="javascript" src="<%= Page.ResolveUrl("~/Js/FuncionesJs.js") %>"  type="text/javascript"></script>
+
+    <form id="form1" runat="server">
+        <%--VALORES SESION--%>
+        <input type="hidden" id="idSesionOculto" runat="server" />
+        <input type="hidden" id="codUsuarioOculto" runat="server" />
+        <input type="hidden" id="codEmpresaOculto" runat="server" />
+        <asp:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server" />
+
+        <div id="divContenedor">
+            <div id="divImagenes">
+                <div id="divImagenesBCR">
+                    <asp:Image ID="imgLogoBCR" runat="server" ImageUrl="~/Imagenes/LogIn/imgLogoBCR.png" />
+                </div>
+                <div id="divImagenesSicad">
+                    <asp:Image ID="imgLogoSicad" runat="server" ImageUrl="~/Imagenes/LogIn/BannerSuperior.jpg" />
+                </div>
+            </div>
+            <div id="divDatos">
+                <asp:Label ID="lblUsuario" runat="server" CssClass="etiquetasDatos" Font-Bold="True" Text="Usuario: " />
+                <asp:Label ID="lblDatosUsuario" runat="server" CssClass="etiquetasDatos" />
+                <asp:Label ID="lblEmpresa" runat="server" CssClass="etiquetasDatos" Text="| Empresa: " Font-Bold="true" />
+                <asp:Label ID="lblDatosEmpresa" runat="server" CssClass="etiquetasDatos" />
+                <asp:LinkButton ID="lnkCerrarSesion" runat="server" CausesValidation="false"
+                    CssClass="etiquetasDatosCerrarSesion" Font-Bold="True" Text="| Cerrar Sesión" OnClick="lnkCerrarSesion_Click" />
+            </div>
+            <div id="divContenedorPrincipal">
+                <div id="divContenedorPrincipalMenu">
+                    <asp:UpdatePanel ID="UpdatePanel1" runat="server" UpdateMode="Conditional">
+                        <ContentTemplate>
+                            <div class="menucontenedor">
+                                <asp:Accordion ID="AccordionMenu" runat="server" OnItemDataBound="OnItemDataBound" SuppressHeaderPostbacks="true"
+                                    RequireOpenedPane="True" Height="100%" AutoSize="Limit" ContentCssClass="contenido" HeaderCssClass="header" CssClass="acordion">
+                                    <HeaderTemplate>
+                                        <asp:HyperLink ID="lnkMenu" NavigateUrl='<%# Eval("Url") %>' Text='<%# Eval("Titulo") %>' runat="server" />
+                                    </HeaderTemplate>
+                                    <ContentTemplate>
+                                        <asp:Panel ID="pnlArbol" runat="server" Height="99%">
+                                            <asp:TreeView ID="trvMenu" NodeWrap="true" runat="server" LeafNodeStyle-CssClass="hoja" NodeStyle-CssClass="nodo">
+                                            </asp:TreeView>
+                                        </asp:Panel>
+                                    </ContentTemplate>
+                                </asp:Accordion>
+
+                            </div>
+                        </ContentTemplate>
+                    </asp:UpdatePanel>
+                </div>
+                <div id="divContenedorPrincipalDatos">
+                    <asp:Panel ID="pnlCPH" runat="server">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </asp:Panel>
+                </div>
+            </div>
+            <div id="divPie">
+                <asp:Label ID="lblNombreApp" runat="server" CssClass="generalfont" Font-Bold="true" Font-Size="12px" ForeColor="#FFFFFF" Text="BCR. Derechos Reservados 2015." />
+            </div>
+        </div>
+        <asp:Panel runat="server" ID="popupInformar" Style="display: none;">
+            <uc3:MensajeInformar ID="InformarPopupMsg" runat="server" />
+            <asp:LinkButton runat="server" ID="lkbModalInfo" Style="visibility: hidden;" />
+            <asp:ModalPopupExtender ID="mpeInformarBox" runat="server"
+                PopupControlID="popupInformar"
+                TargetControlID="lkbModalInfo"
+                BackgroundCssClass="modalBackground"
+                DropShadow="false" />
+        </asp:Panel>
+    </form>
+</body>
+</html>
